@@ -15,7 +15,7 @@ public class CommandManager {
         // 0 to Exit the program
         // 1 for User
         // 2 for Admin
-        int commandSet = 1;
+        int command_set = 1;
 
         Admin admin = new Admin();
         User user = new User();
@@ -25,7 +25,7 @@ public class CommandManager {
 
         while (loop) {
 
-            switch (commandSet) {
+            switch (command_set) {
 
                 case 0:
                     System.out.println("Exiting!");
@@ -33,11 +33,11 @@ public class CommandManager {
                     break;
 
                 case 1:
-                    commandSet = user.run();
+                    command_set = user.run();
                     break;
 
                 case 2:
-                    commandSet = admin.run();
+                    command_set = admin.run();
                     break;
             }
         }
