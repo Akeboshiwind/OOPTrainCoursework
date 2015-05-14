@@ -1,12 +1,12 @@
 package com.olivermarshall.trainroutefinder;
 
 /**
- * Created by Oliver on 13/05/2015.
+ * @author Oliver Marshall
  */
 public class TrainRouteFinder {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello World!");
+        new CommandManager().run();
     }
 }
